@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	char alpha[] = "abcdefghijklmnopqrst\n";
+	char alpha[] = "abcdefghijklmnopqrstuvwxyz\n";
 	int l = 0;
 
 	while (alpha[l] != '\0' && alpha[l] != '\n')
