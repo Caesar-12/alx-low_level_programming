@@ -9,13 +9,11 @@
 
 int main(void)
 {
-	char alpha[] = "0123456789";
 	int l = 0;
 
-	while (alpha[l] != '\0' && alpha[l] != '\n')
+	for (; l <= 10 ; l++)
 	{
-		putchar(alpha[l]);
-		l++;
+		putchar(l);
 	}
 	putchar('\n');
 	return (0);
