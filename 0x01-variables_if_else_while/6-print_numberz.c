@@ -11,7 +11,7 @@ int main(void)
 {
 	int l = 0;
 
-	for (; l <= 10 ; l++)
+	for (; l < 10 ; l++)
 	{
 		putchar(l);
 	}
