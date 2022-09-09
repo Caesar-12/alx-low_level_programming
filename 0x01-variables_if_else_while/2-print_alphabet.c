@@ -9,12 +9,13 @@
 
 int main(void)
 {
-	char alpha[] = "abcdefghijklmnopqrstuvwxyz \n";
+	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
 	int l = 0;
 
 	while (alpha[l] != '\0' && alpha[l] != '\n')
 	{
 		putchar(alpha[l]);
+		putchar('\n');
 		l++;
 	}
 	return (0);
