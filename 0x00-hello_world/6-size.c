@@ -5,8 +5,6 @@
  *
  * Description: Using the printf function
  *
- * Description: Using parameters
- *
  * Return: Always 0 (Success)
  */
 
