@@ -1,10 +1,12 @@
 #include <stdio.h>
 
 /**
-* Main - Entry point
-*
-* Return: Always 0 (Success)
-*/
+ * main - Entry point
+ *
+ * Description: 'Simple text printing program'
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
