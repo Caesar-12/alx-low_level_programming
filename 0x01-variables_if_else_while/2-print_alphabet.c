@@ -15,8 +15,8 @@ int main(void)
 	while (alpha[l] != '\0' && alpha[l] != '\n')
 	{
 		putchar(alpha[l]);
-		putchar('\n');
 		l++;
 	}
+	putchar('\n');
 	return (0);
 }
