@@ -2,8 +2,12 @@
 
 /*
  * main - Entry point
+ *
+ * Description: Using the printf function
+ *
+ * Description: Using parameters
+ *
  * Return: Always 0 (Success)
- * Description -Size is not grandeur, and teritory does not make a nation
  */
 
 int main(void)
