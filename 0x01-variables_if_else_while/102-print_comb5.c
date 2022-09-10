@@ -20,7 +20,7 @@ int main(void)
 		{
 			for (t1 = t; t1 <= '9'; t1++)
 			{
-				for (u1 = (u + 1); u1 <= '9'; u1++)
+				for (u1 = u + 1; u1 <= '9'; u1++)
 				{
 					putchar(t);
 					putchar(u);
@@ -39,5 +39,6 @@ int main(void)
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
