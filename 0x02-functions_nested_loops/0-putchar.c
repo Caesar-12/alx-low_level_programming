@@ -18,7 +18,7 @@ int _putchar(char c)
 /**
  * main - Entry point
  * Return: Always 0 (Success)
- * Description: C funtions
+ * Description: Leraning C funtions
  */
 
 int main(void)
