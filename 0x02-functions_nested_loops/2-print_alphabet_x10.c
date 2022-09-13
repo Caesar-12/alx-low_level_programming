@@ -21,7 +21,7 @@ void print_alphabet_x10(void)
 			putchar(alpha[i]);
 			i++;
 		}
-		else if (alpha[i] < '\0')
+		else if (num < 10)
 		{
 			putchar('\n');
 			num++;
