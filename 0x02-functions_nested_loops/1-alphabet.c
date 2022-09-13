@@ -20,15 +20,3 @@ void print_alphabet(void)
 	}
 	putchar('\n');
 }
-
-/**
- * main - Program body
- * Description: Main programme body
- * Return: 0 if succesfull
- */
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
