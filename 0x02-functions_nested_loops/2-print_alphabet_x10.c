@@ -14,14 +14,14 @@ void print_alphabet_x10(void)
 	int num = 0;
 	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
 
-	while (num != 10)
+	while (num < 10)
 	{
 		if (alpha[i] != '\0')
 		{
 			putchar(alpha[i]);
 			i++;
 		}
-		else if (alpha[i] <= '\0')
+		else if (alpha[i] < '\0')
 		{
 			putchar('\n');
 			num++;
