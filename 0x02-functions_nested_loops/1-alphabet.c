@@ -4,12 +4,11 @@
 #include <stdlib.h>
 
 /**
- * main - Main body
- * Description: Printing alphabets
- * Return: 0 if successfull
+ * print_alphabet - Main body
+ * Description: Printing alphabet
  */
 
-int main(void)
+void print_alphabet(void)
 {
 	int i = 0;
 	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
@@ -20,5 +19,16 @@ int main(void)
 		i++;
 	}
 	putchar('\n');
+}
+
+/**
+ * main - Program body
+ * Description: Main programme body
+ * Return: 0 if succesfull
+ */
+
+int main(void)
+{
+	print_alphabet();
 	return (0);
 }
