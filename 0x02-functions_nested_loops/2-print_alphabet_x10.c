@@ -11,7 +11,7 @@
 void print_alphabet_x10(void)
 {
 	int i = 0;
-	int num = 10;
+	int num = 0;
 	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
 
 	while (num != 10)
