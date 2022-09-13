@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include <main.h>
 
 /**
  * _putchar - Entry point
@@ -12,6 +11,7 @@
 
 int _putchar(char c)
 {
+#include <main.h>
 	return (write(1, &c, 1));
 }
 
