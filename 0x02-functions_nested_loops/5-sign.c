@@ -18,7 +18,7 @@ int print_sign(int n)
 		putchar('+');
 		return (1);
 	}
-	else if (num = 0)
+	else if (num == 0)
 	{
 		putchar('0');
 		return (0);
