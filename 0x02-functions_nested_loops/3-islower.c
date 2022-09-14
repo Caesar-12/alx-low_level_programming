@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <main.h>
 
 /**
  * _islower - Main function body
