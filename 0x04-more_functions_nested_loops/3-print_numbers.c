@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_numbers - Func body
@@ -8,11 +9,11 @@
 
 void print_numbers(void)
 {
-	char i;
+	int i;
 
-	for (i >= '0'; i <= '9'; i++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		_putchar(i);
+		putchar(i);
 	}
-	_putchar('\n');
+	putchar('\n');
 }
