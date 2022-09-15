@@ -14,11 +14,10 @@ void more_numbers(void)
 
 	while (ten <= 9)
 	{
-		for (i = 0; i < 14; i++)
+		for (i = 0; i <= 14; i++)
 		{
 			_putchar(i);
 		}
-		i = 0;
 		_putchar('\n');
 		ten++;
 	}
