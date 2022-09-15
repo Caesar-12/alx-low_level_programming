@@ -19,7 +19,7 @@ void print_times_table(int n)
 		{
 			times = across * down;
 
-			if (down == n)
+			if (down == 0)
 				putchar('0' + times);
 			else
 			{
