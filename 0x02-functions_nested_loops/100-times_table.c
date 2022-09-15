@@ -33,15 +33,15 @@ void print_times_table(int n)
 			}
 			if (down < n)
 			{
-				_putchar(',');
-				_putchar(' ');
-				if (times < 99)
+				putchar(',');
+				putchar(' ');
+				if (times <= 99)
 				{
-					_putchar(' ');
+					putchar(' ');
 				}
-				else if (times < 9)
+				else if (times <= 9)
 				{
-					_putchar(' ');
+					putchar(' ');
 				}
 			}
 		}
