@@ -19,31 +19,32 @@ void print_times_table(int n)
 		{
 			times = across * down;
 
-			if (times <= 9)
-			{
+			if (down == n)
 				putchar('0' + times);
-				putchar(',');
-				putchar(' ');
-				putchar(' ');
-				putchar(' ');
-			}
-			else if (times > 9 && times <= 99)
+			else
 			{
-				putchar('0' + times / 10);
-				putchar('0' + times % 10);
 				putchar(',');
 				putchar(' ');
-				putchar(' ');
+				if (times <= 9)
+				{
+					putchar('0' + times);
+					putchar(' ');
+					putchar(' ');
+				}
+				else if (times > 9 && times <= 99)
+				{
+					putchar('0' + times / 10);
+					putchar('0' + times % 10);
+					putchar(' ');
+				}
+				else if (times > 99)
+				{
+					putchar('0' + times / 100);
+					putchar('0' + (times / 10) % 10);
+					putchar('0' + times % 10);
+				}
 			}
-			else if (times > 99)
-			{
-				putchar('0' + times / 100);
-				putchar('0' + (times / 10) % 10);
-				putchar('0' + times % 10);
-				putchar(',');
-				putchar(' ');
-			}
-		}
 		putchar('\n');
+		}
 	}
 }
