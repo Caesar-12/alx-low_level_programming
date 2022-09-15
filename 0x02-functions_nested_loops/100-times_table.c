@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "main.h"
 /**
  * print_times_table - Main computing body
  * Description: Print multiplication table up to received integer
@@ -18,18 +18,18 @@ void print_times_table(int n)
 			times = across * down;
 			if (times <= 9)
 			{
-				putchar('0' + times);
+				_putchar('0' + times);
 			}
 			else if (times > 9 && times <= 99)
 			{
-				putchar('0' + times / 10);
-				putchar('0' + times % 10);
+				_putchar('0' + times / 10);
+				_putchar('0' + times % 10);
 			}
 			else if (times > 99)
 			{
-				putchar('0' + times / 100);
-				putchar('0' + (times / 10) % 10);
-				putchar('0' + times % 10);
+				_putchar('0' + times / 100);
+				_putchar('0' + (times / 10) % 10);
+				_putchar('0' + times % 10);
 			}
 			else if (down < n)
 			{
@@ -41,6 +41,6 @@ void print_times_table(int n)
 					_putchar(' ');
 			}
 		}
-	putchar('\n');
+	_putchar('\n');
 	}
 }
