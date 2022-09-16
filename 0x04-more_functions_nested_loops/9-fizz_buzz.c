@@ -18,15 +18,15 @@ int main(void)
 	{
 		if ((num % 3) == 0)
 		{
-			printf("%s", val3);
+			printf("Fizz");
 		}
 		else if ((num % 5) == 0)
 		{
-			printf("%s", val5);
+			printf("Buzz");
 		}
 		else if ((num % 3) == 0 && (num % 5) == 0)
 		{
-			printf("%s", val_both);
+			printf("FizzBuzz");
 		}
 		else
 		{
