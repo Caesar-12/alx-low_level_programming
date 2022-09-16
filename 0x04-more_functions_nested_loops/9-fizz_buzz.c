@@ -10,9 +10,6 @@
 int main(void)
 {
 	int num;
-	char val3[] = "Fizz";
-	char val5[] = "Buzz";
-	char val_both[] = "FizzBuzz";
 
 	for (num = 0; num <= 100; num++)
 	{
