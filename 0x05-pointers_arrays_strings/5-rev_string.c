@@ -11,18 +11,26 @@
 void rev_string(char *s)
 {
 	int i = 0;
+	int l = 0;
+	char *c = s;
+	int r = 0;
+	int t;
+	char str;
 
-	while (s[i] != '\0')
+	while (*c != '\0')
 	{
+		c++;
 		i++;
 	}
 
-	i = i - 1;
+	l = i - 1;
 
-	while ( i >= 0)
+	for ( ; r < ((l / 2) + 1); r++)
 	{
-		s[-i] = s[i];
-		i--;
+		t = (l - r);
+		str = s[r];
+		s[r] = s[t];
+		s[t] = str;
 	}
 	_putchar('\n');
 }
