@@ -2,13 +2,13 @@
 #include "main.h"
 
 /**
- * _puts - Func body
+ * print_rev - Func body
  * Description: Prints out a string in rev to stdout
  * @str: String to print to stdout
  * Return: void
  */
 
-void _puts(char *str)
+void print_rev(char *str)
 {
 	int i = 0;
 
