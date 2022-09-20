@@ -18,12 +18,12 @@ void puts_half(char *str)
 		i++;
 	}
 
-	l = i;
+	l = ((i - 1) / 2);
 
 	while (l >= ((i - 1) / 2))
 	{
 		_putchar(str[l]);
-		l--;
+		l++;
 	}
 	_putchar('\n');
 }
