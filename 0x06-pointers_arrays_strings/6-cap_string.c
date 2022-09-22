@@ -21,22 +21,26 @@ char *cap_string(char *c)
 			}
 			continue;
 		}
-		if (c[i] == ' ')
+		switch (c[i])
 		{
-			i++;
-
-			if (c[i] >= 'a' && c[i] <= 'z')
-			{
-				c[i] = c[i] - 32;
-				continue;
-			}
-		}
-		else
-		{
-			if (c[i] >= 'A' && c[i] <= 'Z')
-			{
-				c[i] = c[i] + 32;
-			}
+			case ',':
+			case ';':
+			case '.':
+			case '!':
+			case '?':
+			case '"':
+			case ')':
+			case '(':
+			case '{':
+			case '}':
+			case ' ':
+			case '\n':
+			case '\t':
+				i++;
+				if (c[i] >= 'a' && c[i] <= 'z')
+				{
+					c[i] = c[i] - 32;
+				}
 		}
 	}
 	return (c);
