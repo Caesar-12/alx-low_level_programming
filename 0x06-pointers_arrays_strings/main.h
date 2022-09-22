@@ -15,3 +15,5 @@ char *string_toupper(char *);
 char *cap_string(char *c);
 
 char *leet(char *);
+
+void print_number(int n);
