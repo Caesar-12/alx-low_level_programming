@@ -10,13 +10,13 @@
 char *rot13(char *c)
 {
 	int i;
-	int len;
+	int len = 0;
 	char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char encode[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdejghijklm";
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
-		for (len = 0; alpha[len] != '\0'; )
+		while (alpha[len] != '\0')
 		{
 			if (c[i] != alpha[len])
 			{
@@ -25,7 +25,7 @@ char *rot13(char *c)
 			else if (c[i] == alpha[len])
 			{
 				c[i] = encode[len];
-				len++;
+				len = 0;
 			}
 		}
 	}
