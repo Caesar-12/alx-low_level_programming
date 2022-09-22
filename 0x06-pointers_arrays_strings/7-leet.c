@@ -13,7 +13,7 @@ char *leet(char *c)
 	int len;
 
 	char alpha[] = "aAeEoOtTlL";
-	char encode[] = "4422007711";
+	char encode[] = "4433007711";
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
