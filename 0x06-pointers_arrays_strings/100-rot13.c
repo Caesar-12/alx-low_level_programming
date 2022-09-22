@@ -26,6 +26,7 @@ char *rot13(char *c)
 			{
 				c[i] = encode[len];
 				len = 0;
+				break;
 			}
 		}
 	}
