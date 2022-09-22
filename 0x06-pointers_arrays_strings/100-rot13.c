@@ -21,7 +21,6 @@ char *rot13(char *c)
 			if (c[i] == alpha[len])
 			{
 				c[i] = encode[len];
-				break;
 			}
 		}
 	}
