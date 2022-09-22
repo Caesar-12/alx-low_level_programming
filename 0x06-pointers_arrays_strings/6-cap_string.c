@@ -35,10 +35,9 @@ char *cap_string(char *c)
 			case ' ':
 			case '\n':
 			case '\t':
-				i++;
-				if (c[i] >= 'a' && c[i] <= 'z')
+				if (c[i + 1] >= 'a' && c[i + 1] <= 'z')
 				{
-					c[i] = c[i] - 32;
+					c[i + 1] = c[i + 1] - 32;
 				}
 		}
 	}
