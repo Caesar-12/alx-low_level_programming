@@ -16,13 +16,18 @@ char *rot13(char *c)
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
-		for (len = 0; alpha[len] != '\0'; len++)
+		for (len = 0; alpha[len] != '\0'; )
 		{
 			if (c[i] == alpha[len])
 			{
 				c[i] = encode[len];
 			}
+			else if (c[i] != alpha[len])
+			{
+				len++;
+			}
 		}
+		len++;
 	}
 	return (c);
 }
