@@ -10,24 +10,21 @@
 char *rot13(char *c)
 {
 	int i;
-	int len = 0;
+	int len;
 	char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char encode[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdejghijklm";
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
-		while (alpha[len] != '\0')
+		len = 0;
+
+		while (alpha[len] != '\0' && c[i] != alpha[len])
 		{
-			if (c[i] != alpha[len])
-			{
-				len++;
-			}
-			else if (c[i] == alpha[len])
-			{
-				c[i] = encode[len];
-				len = 0;
-				break;
-			}
+			len++;
+		}
+		if (c[i] != alpha[len])
+		{
+			c[i] = encode[len];
 		}
 	}
 	return (c);
