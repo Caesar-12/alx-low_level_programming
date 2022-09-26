@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-
+#include <stddef.h>
 /**
  * *_strchr - Locates first experience
  * @s: Pointer to receive first occurence of char c
