@@ -17,14 +17,14 @@ void print_diagsums(int *a, int size)
 
 	for (pos = 0; pos < size; pos++)
 	{
-		dim = ((pos * size) + pos);
+		dim = (pos * size) + pos;
 		lead_diagsum += a[dim];
 	}
 
 	for (pos = 1; pos < size; pos++)
 	{
-		pos = ((pos * size) - pos);
+		dim = (pos * size) - pos;
 		sec_diagsum += a[dim];
 	}
-	printf("%d, %d \n", lead_diagsum, sec_diagsum);
+	printf("%d, %d\n", lead_diagsum, sec_diagsum);
 }
