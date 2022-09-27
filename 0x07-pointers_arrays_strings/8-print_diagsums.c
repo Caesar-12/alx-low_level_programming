@@ -26,5 +26,5 @@ void print_diagsums(int *a, int size)
 		pos = ((pos * size) - pos);
 		sec_diagsum += a[dim];
 	}
-	printf("%d %d \n", lead_diagsum, sec_diagsum);
+	printf("%d, %d \n", lead_diagsum, sec_diagsum);
 }
