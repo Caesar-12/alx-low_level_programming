@@ -12,8 +12,8 @@ void print_diagsums(int *a, int size)
 {
 	int pos;
 	int dim;
-	int lead_diagsum;
-	int sec_diagsum;
+	int lead_diagsum = 0;
+	int sec_diagsum = 0;
 
 	for (pos = 0; pos < size; pos++)
 	{
