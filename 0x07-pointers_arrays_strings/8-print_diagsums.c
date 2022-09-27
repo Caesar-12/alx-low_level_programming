@@ -21,10 +21,11 @@ void print_diagsums(int *a, int size)
 		lead_diagsum += a[dim];
 	}
 
-	for (pos = 1; pos < size; pos++)
+	for (pos = 1; pos <= size; pos++)
 	{
 		dim = (pos * size) - pos;
 		sec_diagsum += a[dim];
 	}
+
 	printf("%d, %d\n", lead_diagsum, sec_diagsum);
 }
