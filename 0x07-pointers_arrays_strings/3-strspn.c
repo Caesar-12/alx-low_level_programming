@@ -8,35 +8,26 @@
  * Return: Length
  */
 unsigned int _strspn(char *s, char *accept)
-
 {
+	int i;
+	int num = 0;
+	int len = 0;
 
-	int i;	int j;
-
-	unsigned int length;
-
-	length = 0;
-
-	for (i = 0; s[i] != '\0'; i++)
-
+	while (s[num] != '\0')
 	{
-
-		for (j = 0; accept[j] != '\0' && accept[j] != s[i]; j++)
-
-			;
-
-		if (s[i] == accept[j])
-
-			length++;
-
-		if (accept[j] == '\0')
-
-			return (length);
-
+		for (i = 0; accept[i] != '\0'; i++)
+		{
+			if (s[num] == accept [i])
+			{
+				len++;
+				break;
+			}
+			else if (accept[i + 1] == '\0' && s[num] != accept[i])
+			{
+				return (len);
+			}
+		}
+		num++;
 	}
-
-	return (length);
-
+	return (len);
 }
-
-
