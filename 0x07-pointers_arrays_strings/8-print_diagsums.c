@@ -11,19 +11,20 @@
 void print_diagsums(int *a, int size)
 {
 	int pos;
+	int dim;
 	int lead_diagsum;
 	int sec_diagsum;
 
 	for (pos = 0; pos < size; pos++)
 	{
-		pos = ((pos * size) + pos);
-		lead_diagsum += pos;
+		dim = ((pos * size) + pos);
+		lead_diagsum += a[dim];
 	}
 
 	for (pos = 1; pos < size; pos++)
 	{
 		pos = ((pos * size) - pos);
-		sec_diagsum += pos;
+		sec_diagsum += a[dim];
 	}
 	printf("%d %d \n", lead_diagsum, sec_diagsum);
 }
