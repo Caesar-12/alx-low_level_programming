@@ -12,11 +12,11 @@ int check_prime(int n, int factor)
 {
 	if ((n / factor) == 1 || (n / factor) == -1)
 	{
-		return (0);
+		return (1);
 	}
 	else if ((n % factor) == 0)
 	{
-		return (1);
+		return (0);
 	}
 
 	return (check_prime(n, factor + 1));
