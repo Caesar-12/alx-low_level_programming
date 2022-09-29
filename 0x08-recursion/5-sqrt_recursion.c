@@ -19,7 +19,7 @@ int square_root(int n, int root)
 		return (-1);
 	}
 
-	return (square_root(n, root - 1));
+	return (square_root(n, root + 1));
 }
 
 /**
