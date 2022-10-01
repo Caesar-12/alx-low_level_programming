@@ -11,6 +11,8 @@
 int main(int argc, char *argv[])
 {
 	int i, len, sum = 0;
+	int a;
+	int num;
 
 	for (i = 1; i < argc; i++)
 	{
@@ -23,7 +25,6 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-	int a, num;
 
 	for (a = 1; a < argc; a++)
 	{
