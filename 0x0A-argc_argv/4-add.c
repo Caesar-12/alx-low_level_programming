@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Prints a program name
@@ -9,12 +10,26 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
+	int i, len, sum = 0;
 
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
-		printf("%s\n", argv[i]);
+		for (len = 0; argv[i][len] != '\0'; len++)
+		{
+			if (argv[i][len] < '0' || argv[i][len] > '9')
+			{
+				printf("%s\n", "Error");
+				return (1);
+			}
+		}
 	}
+	int a, num;
 
+	for (a = 1; a < argc; a++)
+	{
+		num = atoi(argv[a]);
+		sum += num;
+	}
+	printf("%d\n", sum);
 	return (0);
 }
