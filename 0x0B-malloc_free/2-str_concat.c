@@ -10,7 +10,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int i, size = 0;
+	int i, a, size = 0;
 	int len1 = 0;
 	int len2 = 0;
 	char *ch;
@@ -38,12 +38,12 @@ char *str_concat(char *s1, char *s2)
 		{
 			ch[i] = s1[i];
 		}
-		i = 0;
-		for (i = 0; i <= len2; i++)
+		for (a = 0; a <= len2; a++)
 		{
-			ch[i] = s2[i];
+			ch[i] = s2[a];
+			i++;
 		}
-		ch[size] = '\0';
+		ch[i] = '\0';
 	}
 
 	return (ch);
