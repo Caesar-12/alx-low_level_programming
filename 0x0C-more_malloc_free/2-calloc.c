@@ -11,7 +11,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int i;
+	unsigned int i;
 	void *space;
 
 	space = malloc(nmemb * size);
@@ -24,9 +24,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < (int)nmemb; i++)
+	for (i = 0; i < nmemb; i++)
 	{
-		*((char *)space + i) = '0';
+		*((char *)space + i) = 0;
 	}
 	return (space);
 }
