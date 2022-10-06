@@ -12,7 +12,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int i;
-	char *space;
+	void *space;
 
 	space = malloc(nmemb * size);
 
@@ -26,7 +26,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 	for (i = 0; i < (int)nmemb; i++)
 	{
-		space[i] = '0';
+		*((char *)space + i) = '0';
 	}
-	return ((void *)space);
+	return (space);
 }
