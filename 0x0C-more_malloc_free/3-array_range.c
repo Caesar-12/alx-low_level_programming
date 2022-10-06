@@ -25,7 +25,7 @@ int *array_range(int min, int max)
 	if (space == NULL)
 		return (NULL);
 
-	for (i = 0; i <= range; i++)
+	for (i = 0; i < range; i++)
 	{
 		*(space + i) = num;
 		num++;
