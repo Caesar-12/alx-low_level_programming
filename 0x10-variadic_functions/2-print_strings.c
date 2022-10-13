@@ -30,9 +30,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			else
 			{
 				printf("%s", c);
+				if (i < n - 1 && separator != NULL)
+					printf("%c", *separator);
 			}
-			if (i < n - 1 && separator != NULL)
-				printf("%c", *separator);
 		}
 		va_end(args);
 	}
