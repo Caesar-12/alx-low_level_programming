@@ -12,7 +12,7 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int decind = 1, total = 0;
+	int decind = 1, total = 0;
 	int i = strlen(b), j;
 
 	if (b == NULL)
@@ -20,12 +20,14 @@ unsigned int binary_to_uint(const char *b)
 
 	for (j = (i - 1); j >= 0; j--)
 	{
-		if (b[j] != 1 && b[j] != 0)
+		if (b[j] == '1' || b[j] == '0')
+		{
+			if (b[j] == '1')
+				total += decind;
+			decind *= 2;
+		}
+		else
 			return (0);
-
-		if (b[j] == '1')
-			total += decind;
-		decind *= 2;
 	}
-	return (total);
+	return ((unsigned int)total);
 }
