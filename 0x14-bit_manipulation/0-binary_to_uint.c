@@ -18,14 +18,13 @@ unsigned int binary_to_uint(const char *b)
 	if (b == NULL)
 		return (0);
 
-	for (j = (i - 1); j <= 0; j--)
+	for (j = (i - 1); j >= 0; j--)
 	{
 		if (b[j] != 1 && b[j] != 0)
 			return (0);
 
 		if (b[j] == '1')
 			total += decind;
-
 		decind *= 2;
 	}
 	return (total);
