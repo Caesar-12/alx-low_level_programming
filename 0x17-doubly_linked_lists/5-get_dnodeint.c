@@ -13,17 +13,17 @@
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	dlistint_t *temp, *affirm;
-	int comp, nodes;
+	int comp, comp2, nodes;
 
-	comp = index;
+	comp = comp2 = index;
 	nodes = 0;
 	temp = affirm = head;
 	while (affirm)
 	{
 		affirm = affirm->next;
-		node++;
+		nodes++;
 	}
-	if (index > nodes || index < 0)
+	if (comp2 > nodes)
 		return (NULL);
 	while (comp > 0)
 	{
