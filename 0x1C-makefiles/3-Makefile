@@ -4,7 +4,7 @@ NAME = school
 OBJ = $(SRC:.c=.o)
 RM = rm
 
-all: $(NAME)
+all: school
 
 school: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
