@@ -10,10 +10,11 @@ school: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean: *~
-	$(RM) -f *~
-
-fclean: *~ $(OBJ)
-	$(RM) -f *~ $(OBJ)
+	$(RM) -f *~ $(NAME)
 
 oclean: $(OBJ)
 	$(RM) -f $(OBJ)
+
+fclean: clean oclean
+
+re: oclean all
